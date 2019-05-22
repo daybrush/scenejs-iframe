@@ -1,6 +1,6 @@
 {
   "name": "@scenejs/iframe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A library that control the animation of iframe with scenejs",
   "main": "./dist/iframe.cjs.js",
   "module": "./dist/iframe.esm.js",

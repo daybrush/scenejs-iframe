@@ -1,5 +1,6 @@
 import { Animator } from "scenejs";
 import { addEvent, isString } from "@daybrush/utils";
+
 addEvent(window, "message", e => {
     const result = parseMessage(e.data);
 
@@ -36,7 +37,11 @@ var scene = new Scene({
 register(scene);
  */
 export function register(item: Animator): void {
-    if (window.parent && window.parent.postMessage) {
+    if (
+        window.parent
+        && window !== window.parent
+        && window.parent.postMessage
+    ) {
         sendMessage(window.parent, "ready");
     }
     addEvent(window, "message", e => {
