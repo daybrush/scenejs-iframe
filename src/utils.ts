@@ -1,8 +1,37 @@
 import { Animator } from "scenejs";
-import { addEvent } from "@daybrush/utils";
+import { addEvent, isString } from "@daybrush/utils";
 
-export function registerIframe(name: string, item: Animator) {
-    addEvent(window, "hashchange", e => {
-        const hash = location.hash;
+export function postMessage(message: string) {
+    window.postMessage(message, "*");
+}
+export function register(item: Animator) {
+    addEvent(window, "message", e => {
+        const data = e.data;
+
+        if (!isString(data)) {
+            return;
+        }
+        const result = /(?<=^scene\:)([^:]+)(?:\:([^:]+))?/g.exec(data);
+
+        if (!result) {
+            return;
+        }
+        const type = result[1];
+        const value = result[2];
+
+        switch (type) {
+            case "start":
+                item.start(0);
+                break;
+            case "pause":
+                item.pause();
+                break;
+            case "end":
+                item.end();
+                break;
+            case "animate":
+                item.setTime(parseFloat(value), true, true);
+                break;
+        }
     });
 }

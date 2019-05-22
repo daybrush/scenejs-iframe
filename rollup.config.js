@@ -3,27 +3,21 @@ import builder from "@daybrush/builder";
 
 export default builder([
     {
-        name: "Iframe",
+        name: "IframeItem",
         input: "src/index.umd.ts",
         output: "./dist/iframe.js",
-    },
-    {
-        name: "Iframe",
-        input: "src/index.umd.ts",
-        output: "./dist/iframe.min.js",
-        uglify: true,
-
-    },
-    {
-        name: "Iframe",
-        input: "src/index.umd.ts",
-        output: "./dist/iframe.pkgd.js",
+        external: {
+            "scenejs": "Scene",
+        },
         resolve: true,
     },
     {
-        name: "Iframe",
+        name: "IframeItem",
         input: "src/index.umd.ts",
-        output: "./dist/iframe.pkgd.min.js",
+        output: "./dist/iframe.min.js",
+        external: {
+            "scenejs": "Scene",
+        },
         resolve: true,
         uglify: true,
     },
@@ -32,11 +26,19 @@ export default builder([
         output: "./dist/iframe.esm.js",
         exports: "named",
         format: "es",
+        external: {
+            "scenejs": "Scene",
+            "@daybrush/utils": "utils",
+        },
     },
     {
         input: "src/index.ts",
         output: "./dist/iframe.cjs.js",
         exports: "named",
         format: "cjs",
+        external: {
+            "scenejs": "Scene",
+            "@daybrush/utils": "utils",
+        },
     },
 ]);
