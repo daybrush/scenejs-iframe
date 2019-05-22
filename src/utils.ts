@@ -1,9 +1,6 @@
 import { Animator } from "scenejs";
 import { addEvent, isString } from "@daybrush/utils";
 
-export function postMessage(message: string) {
-    window.postMessage(message, "*");
-}
 export function register(item: Animator) {
     addEvent(window, "message", e => {
         const data = e.data;
@@ -29,8 +26,9 @@ export function register(item: Animator) {
             case "end":
                 item.end();
                 break;
+            case "time":
             case "animate":
-                item.setTime(parseFloat(value), true, true);
+                item.setTime(parseFloat(value), type === "animate", true);
                 break;
         }
     });

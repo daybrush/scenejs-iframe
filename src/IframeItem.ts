@@ -1,32 +1,39 @@
-import { SceneItem, EasingType } from "scenejs";
-import { postMessage } from "./utils";
+import { SceneItem, EasingType, AnimateElement } from "scenejs";
+import { IArrayFormat } from "@daybrush/utils";
 
 export default class IframeItem extends SceneItem {
-    constructor(duration: number) {
-        super();
-        this.setDuration(duration);
-    }
     public setTime(time: number | string, isTick?: boolean, isParent?: boolean, parentEasing?: EasingType): this {
         super.setTime(time, isTick, isParent, parentEasing);
         const iterationTime = this.getIterationTime();
 
-        postMessage(`scene:animate:${iterationTime}`);
+        this.sendMessage(`${isTick ? "animate" : "time"}:${iterationTime}`);
         return this;
     }
     public end(): this {
         super.end();
-        postMessage("scene:end");
+        this.sendMessage("end");
         return this;
     }
     public pause(): this {
         super.pause();
-        postMessage("scene:pause");
+        this.sendMessage("pause");
         return this;
     }
     public start(delay?: number): boolean {
         const result = super.start(delay);
 
-        postMessage("scene:start");
+        this.sendMessage("start");
         return result;
+    }
+    private sendMessage(message: string) {
+        const elements = this.getElements() as HTMLIFrameElement[];
+
+        elements.forEach(el => {
+            if (!el.contentWindow) {
+                return;
+            }
+            el.contentWindow.postMessage(`scene:${message}`, "*");
+        });
+
     }
 }
