@@ -2,7 +2,6 @@
 
 A library that control the animation of iframe with [**scenejs**](https://github.com/daybrush/scenejs)
 
-* [API Documentation](https://daybrush.com/scenejs-iframe/release/latest/doc)
 
 ## Installation
 ### npm
@@ -17,7 +16,11 @@ $ npm install @scenejs/iframe
 <script src="//daybrush.com/@scenejs/iframe/release/latest/dist/iframe.min.js"></script>
 ```
 
-### Getting Started
+## API Documents
+
+* [API Documentation](https://daybrush.com/scenejs-iframe/release/latest/doc)
+
+## Getting Started
 * [index.html](https://daybrush.com/scenejs-iframe/release/latest/examples/index.html) (parent)
 ```html
 <iframe id="iframe1" src="./motion.html"></iframe>
@@ -49,7 +52,6 @@ var scene = new Scene({
 // IframeItem.register(scene);
 register(scene);
 ```
-
 
 ```
 MIT License
