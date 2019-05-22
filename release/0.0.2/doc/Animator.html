@@ -1,0 +1,5220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Animator - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/daybrush.css">
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="Animator - Documentation"/>
+
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h2 class="custom"><a href="https://github.com/daybrush/iframe" target="_blank" class="menu-item" id="repository" >Github repo</a></h2><div class="search"><div class="input-area"><input type="text"/></div><button></button></div><ul class="classes"><li file="iframeitem" class="parent"><a href="IframeItem.html">IframeItem</a><h4><a href="IframeItem.html#static methods">Static Methods</a></h4><ul class='static methods'><li data-type='method'><a href="IframeItem.html#.register">register</a></li></ul><h4><a href="IframeItem.html#methods">Methods</a></h4><ul class='methods'><li data-type='method'><a href="IframeItem.html#append">append</a></li><li data-type='method'><a href="IframeItem.html#clone">clone</a></li><li data-type='method'><a href="IframeItem.html#end">end</a></li><li data-type='method'><a href="IframeItem.html#exportCSS">exportCSS</a></li><li data-type='method'><a href="IframeItem.html#finish">finish</a></li><li data-type='method'><a href="IframeItem.html#forEach">forEach</a></li><li data-type='method'><a href="IframeItem.html#get">get</a></li><li data-type='method'><a href="IframeItem.html#getActiveDuration">getActiveDuration</a></li><li data-type='method'><a href="IframeItem.html#getDelay">getDelay</a></li><li data-type='method'><a href="IframeItem.html#getDirection">getDirection</a></li><li data-type='method'><a href="IframeItem.html#getDuration">getDuration</a></li><li data-type='method'><a href="IframeItem.html#getEasing">getEasing</a></li><li data-type='method'><a href="IframeItem.html#getEasingName">getEasingName</a></li><li data-type='method'><a href="IframeItem.html#getElements">getElements</a></li><li data-type='method'><a href="IframeItem.html#getFillMode">getFillMode</a></li><li data-type='method'><a href="IframeItem.html#getFrame">getFrame</a></li><li data-type='method'><a href="IframeItem.html#getId">getId</a></li><li data-type='method'><a href="IframeItem.html#getIterationCount">getIterationCount</a></li><li data-type='method'><a href="IframeItem.html#getIterationTime">getIterationTime</a></li><li data-type='method'><a href="IframeItem.html#getNowFrame">getNowFrame</a></li><li data-type='method'><a href="IframeItem.html#getPlaySpeed">getPlaySpeed</a></li><li data-type='method'><a href="IframeItem.html#getPlayState">getPlayState</a></li><li data-type='method'><a href="IframeItem.html#getTime">getTime</a></li><li data-type='method'><a href="IframeItem.html#getTotalDuration">getTotalDuration</a></li><li data-type='method'><a href="IframeItem.html#hasFrame">hasFrame</a></li><li data-type='method'><a href="IframeItem.html#hasName">hasName</a></li><li data-type='method'><a href="IframeItem.html#isDelay">isDelay</a></li><li data-type='method'><a href="IframeItem.html#isEnded">isEnded</a></li><li data-type='method'><a href="IframeItem.html#isPaused">isPaused</a></li><li data-type='method'><a href="IframeItem.html#mergeFrame">mergeFrame</a></li><li data-type='method'><a href="IframeItem.html#newFrame">newFrame</a></li><li data-type='method'><a href="IframeItem.html#pause">pause</a></li><li data-type='method'><a href="IframeItem.html#play">play</a></li><li data-type='method'><a href="IframeItem.html#playCSS">playCSS</a></li><li data-type='method'><a href="IframeItem.html#prepend">prepend</a></li><li data-type='method'><a href="IframeItem.html#remove">remove</a></li><li data-type='method'><a href="IframeItem.html#removeFrame">removeFrame</a></li><li data-type='method'><a href="IframeItem.html#set">set</a></li><li data-type='method'><a href="IframeItem.html#setCSS">setCSS</a></li><li data-type='method'><a href="IframeItem.html#setDelay">setDelay</a></li><li data-type='method'><a href="IframeItem.html#setDirection">setDirection</a></li><li data-type='method'><a href="IframeItem.html#setDuration">setDuration</a></li><li data-type='method'><a href="IframeItem.html#setEasing">setEasing</a></li><li data-type='method'><a href="IframeItem.html#setElement">setElement</a></li><li data-type='method'><a href="IframeItem.html#setElements">setElements</a></li><li data-type='method'><a href="IframeItem.html#setFillMode">setFillMode</a></li><li data-type='method'><a href="IframeItem.html#setFrame">setFrame</a></li><li data-type='method'><a href="IframeItem.html#setId">setId</a></li><li data-type='method'><a href="IframeItem.html#setIterationCount">setIterationCount</a></li><li data-type='method'><a href="IframeItem.html#setOptions">setOptions</a></li><li data-type='method'><a href="IframeItem.html#setPlaySpeed">setPlaySpeed</a></li><li data-type='method'><a href="IframeItem.html#setPlayState">setPlayState</a></li><li data-type='method'><a href="IframeItem.html#setSelector">setSelector</a></li><li data-type='method'><a href="IframeItem.html#setTime">setTime</a></li><li data-type='method'><a href="IframeItem.html#size">size</a></li><li data-type='method'><a href="IframeItem.html#toObject">toObject</a></li><li data-type='method'><a href="IframeItem.html#unshift">unshift</a></li><li data-type='method'><a href="IframeItem.html#update">update</a></li></ul><h4><a href="IframeItem.html#events">Events</a></h4><ul class='events'><li data-type='event'><a href="IframeItem.html#event:animate">animate</a></li><li data-type='event'><a href="IframeItem.html#event:ended">ended</a></li><li data-type='event'><a href="IframeItem.html#event:iteration">iteration</a></li><li data-type='event'><a href="IframeItem.html#event:paused">paused</a></li><li data-type='event'><a href="IframeItem.html#event:play">play</a></li><li data-type='event'><a href="IframeItem.html#event:timeupdate">timeupdate</a></li></ul></li><li file="animator" class="parent"><a href="Animator.html">Animator</a><h4><a href="Animator.html#methods">Methods</a></h4><ul class='methods'><li data-type='method'><a href="Animator.html#end">end</a></li><li data-type='method'><a href="Animator.html#finish">finish</a></li><li data-type='method'><a href="Animator.html#getActiveDuration">getActiveDuration</a></li><li data-type='method'><a href="Animator.html#getDelay">getDelay</a></li><li data-type='method'><a href="Animator.html#getDirection">getDirection</a></li><li data-type='method'><a href="Animator.html#getDuration">getDuration</a></li><li data-type='method'><a href="Animator.html#getEasing">getEasing</a></li><li data-type='method'><a href="Animator.html#getEasingName">getEasingName</a></li><li data-type='method'><a href="Animator.html#getFillMode">getFillMode</a></li><li data-type='method'><a href="Animator.html#getId">getId</a></li><li data-type='method'><a href="Animator.html#getIterationCount">getIterationCount</a></li><li data-type='method'><a href="Animator.html#getIterationTime">getIterationTime</a></li><li data-type='method'><a href="Animator.html#getPlaySpeed">getPlaySpeed</a></li><li data-type='method'><a href="Animator.html#getPlayState">getPlayState</a></li><li data-type='method'><a href="Animator.html#getTime">getTime</a></li><li data-type='method'><a href="Animator.html#getTotalDuration">getTotalDuration</a></li><li data-type='method'><a href="Animator.html#isDelay">isDelay</a></li><li data-type='method'><a href="Animator.html#isEnded">isEnded</a></li><li data-type='method'><a href="Animator.html#isPaused">isPaused</a></li><li data-type='method'><a href="Animator.html#pause">pause</a></li><li data-type='method'><a href="Animator.html#play">play</a></li><li data-type='method'><a href="Animator.html#setDelay">setDelay</a></li><li data-type='method'><a href="Animator.html#setDirection">setDirection</a></li><li data-type='method'><a href="Animator.html#setDuration">setDuration</a></li><li data-type='method'><a href="Animator.html#setEasing">setEasing</a></li><li data-type='method'><a href="Animator.html#setFillMode">setFillMode</a></li><li data-type='method'><a href="Animator.html#setId">setId</a></li><li data-type='method'><a href="Animator.html#setIterationCount">setIterationCount</a></li><li data-type='method'><a href="Animator.html#setOptions">setOptions</a></li><li data-type='method'><a href="Animator.html#setPlaySpeed">setPlaySpeed</a></li><li data-type='method'><a href="Animator.html#setPlayState">setPlayState</a></li><li data-type='method'><a href="Animator.html#setTime">setTime</a></li></ul><h4><a href="Animator.html#events">Events</a></h4><ul class='events'><li data-type='event'><a href="Animator.html#event:ended">ended</a></li><li data-type='event'><a href="Animator.html#event:iteration">iteration</a></li><li data-type='event'><a href="Animator.html#event:paused">paused</a></li><li data-type='event'><a href="Animator.html#event:play">play</a></li><li data-type='event'><a href="Animator.html#event:timeupdate">timeupdate</a></li></ul></li><li file="sceneitem" class="parent"><a href="SceneItem.html">SceneItem</a><h4><a href="SceneItem.html#methods">Methods</a></h4><ul class='methods'><li data-type='method'><a href="SceneItem.html#append">append</a></li><li data-type='method'><a href="SceneItem.html#clone">clone</a></li><li data-type='method'><a href="SceneItem.html#end">end</a></li><li data-type='method'><a href="SceneItem.html#exportCSS">exportCSS</a></li><li data-type='method'><a href="SceneItem.html#finish">finish</a></li><li data-type='method'><a href="SceneItem.html#forEach">forEach</a></li><li data-type='method'><a href="SceneItem.html#get">get</a></li><li data-type='method'><a href="SceneItem.html#getActiveDuration">getActiveDuration</a></li><li data-type='method'><a href="SceneItem.html#getDelay">getDelay</a></li><li data-type='method'><a href="SceneItem.html#getDirection">getDirection</a></li><li data-type='method'><a href="SceneItem.html#getDuration">getDuration</a></li><li data-type='method'><a href="SceneItem.html#getEasing">getEasing</a></li><li data-type='method'><a href="SceneItem.html#getEasingName">getEasingName</a></li><li data-type='method'><a href="SceneItem.html#getElements">getElements</a></li><li data-type='method'><a href="SceneItem.html#getFillMode">getFillMode</a></li><li data-type='method'><a href="SceneItem.html#getFrame">getFrame</a></li><li data-type='method'><a href="SceneItem.html#getId">getId</a></li><li data-type='method'><a href="SceneItem.html#getIterationCount">getIterationCount</a></li><li data-type='method'><a href="SceneItem.html#getIterationTime">getIterationTime</a></li><li data-type='method'><a href="SceneItem.html#getNowFrame">getNowFrame</a></li><li data-type='method'><a href="SceneItem.html#getPlaySpeed">getPlaySpeed</a></li><li data-type='method'><a href="SceneItem.html#getPlayState">getPlayState</a></li><li data-type='method'><a href="SceneItem.html#getTime">getTime</a></li><li data-type='method'><a href="SceneItem.html#getTotalDuration">getTotalDuration</a></li><li data-type='method'><a href="SceneItem.html#hasFrame">hasFrame</a></li><li data-type='method'><a href="SceneItem.html#hasName">hasName</a></li><li data-type='method'><a href="SceneItem.html#isDelay">isDelay</a></li><li data-type='method'><a href="SceneItem.html#isEnded">isEnded</a></li><li data-type='method'><a href="SceneItem.html#isPaused">isPaused</a></li><li data-type='method'><a href="SceneItem.html#mergeFrame">mergeFrame</a></li><li data-type='method'><a href="SceneItem.html#newFrame">newFrame</a></li><li data-type='method'><a href="SceneItem.html#pause">pause</a></li><li data-type='method'><a href="SceneItem.html#play">play</a></li><li data-type='method'><a href="SceneItem.html#playCSS">playCSS</a></li><li data-type='method'><a href="SceneItem.html#prepend">prepend</a></li><li data-type='method'><a href="SceneItem.html#remove">remove</a></li><li data-type='method'><a href="SceneItem.html#removeFrame">removeFrame</a></li><li data-type='method'><a href="SceneItem.html#set">set</a></li><li data-type='method'><a href="SceneItem.html#setCSS">setCSS</a></li><li data-type='method'><a href="SceneItem.html#setDelay">setDelay</a></li><li data-type='method'><a href="SceneItem.html#setDirection">setDirection</a></li><li data-type='method'><a href="SceneItem.html#setDuration">setDuration</a></li><li data-type='method'><a href="SceneItem.html#setEasing">setEasing</a></li><li data-type='method'><a href="SceneItem.html#setElement">setElement</a></li><li data-type='method'><a href="SceneItem.html#setElements">setElements</a></li><li data-type='method'><a href="SceneItem.html#setFillMode">setFillMode</a></li><li data-type='method'><a href="SceneItem.html#setFrame">setFrame</a></li><li data-type='method'><a href="SceneItem.html#setId">setId</a></li><li data-type='method'><a href="SceneItem.html#setIterationCount">setIterationCount</a></li><li data-type='method'><a href="SceneItem.html#setOptions">setOptions</a></li><li data-type='method'><a href="SceneItem.html#setPlaySpeed">setPlaySpeed</a></li><li data-type='method'><a href="SceneItem.html#setPlayState">setPlayState</a></li><li data-type='method'><a href="SceneItem.html#setSelector">setSelector</a></li><li data-type='method'><a href="SceneItem.html#setTime">setTime</a></li><li data-type='method'><a href="SceneItem.html#size">size</a></li><li data-type='method'><a href="SceneItem.html#toObject">toObject</a></li><li data-type='method'><a href="SceneItem.html#unshift">unshift</a></li><li data-type='method'><a href="SceneItem.html#update">update</a></li></ul><h4><a href="SceneItem.html#events">Events</a></h4><ul class='events'><li data-type='event'><a href="SceneItem.html#event:animate">animate</a></li><li data-type='event'><a href="SceneItem.html#event:ended">ended</a></li><li data-type='event'><a href="SceneItem.html#event:iteration">iteration</a></li><li data-type='event'><a href="SceneItem.html#event:paused">paused</a></li><li data-type='event'><a href="SceneItem.html#event:play">play</a></li><li data-type='event'><a href="SceneItem.html#event:timeupdate">timeupdate</a></li></ul></li></ul><ul class="global"><li file="global"  class="parent"><a href="global.html">Global</a><h4><a href="global.html#type definitions">Type Definitions</a></h4><ul class='type definitions'><li data-type='typedef'><a href="global.html#AnimatorState">AnimatorState</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Animator</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        Animator
+        </h2>
+        
+            <div class="class-description">play video, animation, the others</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="Animator"><span class="type-signature"></span>new Animator<span class="signature">(options<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line63">line 63</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://www.w3schools.com/css/css3_animations.asp">CSS3 Animation</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Partial&lt;T &amp; AnimatorOptions></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">animator's options</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const animator = new Animator({
+      delay: 2,
+      diretion: "alternate",
+      duration: 2,
+      fillMode: "forwards",
+      iterationCount: 3,
+      easing: Scene.easing.EASE,
+  });</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li>EventTrigger</li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title" id="methods">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="end"><span class="type-signature"></span>end<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line299">line 299</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    end animator
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="finish"><span class="type-signature"></span>finish<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line289">line 289</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    end animator
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getActiveDuration"><span class="type-signature"></span>getActiveDuration<span class="signature">(delay<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line199">line 199</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get the animator's total duration excluding delay
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>delay</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>animator.getActiveDuration();</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Total duration excluding delay
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getDelay"><span class="type-signature"></span>getDelay<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line502">line 502</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get a delay for the start of an animation.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    delay
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getDirection"><span class="type-signature"></span>getDirection<span class="signature">()</span><span class="type-signature"> &rarr; {DirectionType}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line535">line 535</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get whether an animation should be played forwards, backwards or in alternate cycles.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    direction
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">DirectionType</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getDuration"><span class="type-signature"></span>getDuration<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line568">line 568</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get how long an animation should take to complete one cycle.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    duration
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getEasing"><span class="type-signature"></span>getEasing<span class="signature">()</span><span class="type-signature"> &rarr; {EasingType}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line579">line 579</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get the speed curve of an animation.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    easing
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">EasingType</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getEasingName"><span class="type-signature"></span>getEasingName<span class="signature">()</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line584">line 584</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get the speed curve's name
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    the curve's name.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getFillMode"><span class="type-signature"></span>getFillMode<span class="signature">()</span><span class="type-signature"> &rarr; {FillModeType}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line513">line 513</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get fill mode for the item when the animation is not playing (before it starts, after it ends, or both)
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    fillMode
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">FillModeType</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getId"><span class="type-signature"></span>getId<span class="signature">()</span><span class="type-signature"> &rarr; {number|string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line497">line 497</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Specifies the unique indicator of the animator
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    the indicator of the item.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+|
+
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getIterationCount"><span class="type-signature"></span>getIterationCount<span class="signature">()</span><span class="type-signature"> &rarr; {IterationCountType}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line524">line 524</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get the number of times an animation should be played.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    iterationCount
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">IterationCountType</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getIterationTime"><span class="type-signature"></span>getIterationTime<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line589">line 589</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get the animator's current iteration time
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>animator.getIterationTime();</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    current iteration time
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getPlaySpeed"><span class="type-signature"></span>getPlaySpeed<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line557">line 557</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get the animator's play speed
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    playSpeed
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getPlayState"><span class="type-signature"></span>getPlayState<span class="signature">()</span><span class="type-signature"> &rarr; {PlayStateType}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line546">line 546</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get whether the animation is running or paused.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    playState
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">PlayStateType</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getTime"><span class="type-signature"></span>getTime<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line372">line 372</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get the animator's current time
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>animator.getTime();</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    current time
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getTotalDuration"><span class="type-signature"></span>getTotalDuration<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line190">line 190</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Get the animator's total duration including delay
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>animator.getTotalDuration();</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Total duration
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isDelay"><span class="type-signature"></span>isDelay<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line402">line 402</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Check if the current state of animator is delayed.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    check delay state
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isEnded"><span class="type-signature"></span>isEnded<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line213">line 213</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Check if the animator has reached the end.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>animator.isEnded(); // true or false</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    ended
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isPaused"><span class="type-signature"></span>isPaused<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line227">line 227</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Check if the animator is paused:
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>animator.isPaused(); // true or false</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    paused
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="pause"><span class="type-signature"></span>pause<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line271">line 271</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    pause animator
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="play"><span class="type-signature"></span>play<span class="signature">(toTime<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line248">line 248</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    play animator
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>toTime</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setDelay"><span class="type-signature"></span>setDelay<span class="signature">(delay)</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line507">line 507</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Set a delay for the start of an animation.
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>delay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">delay</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setDirection"><span class="type-signature"></span>setDirection<span class="signature">(direction)</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line540">line 540</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Set whether an animation should be played forwards, backwards or in alternate cycles.
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DirectionType</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">direction</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setDuration"><span class="type-signature"></span>setDuration<span class="signature">(duration)</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line573">line 573</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Set how long an animation should take to complete one cycle.
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>duration</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">duration</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setEasing"><span class="type-signature"></span>setEasing<span class="signature">(curverArray)</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line116">line 116</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    set animator's easing.
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>curverArray</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string | number[] | EasingFunction</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The speed curve of an animation.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>animator.({
+      delay: 2,
+      diretion: "alternate",
+      duration: 2,
+      fillMode: "forwards",
+      iterationCount: 3,
+      easing: Scene.easing.EASE,
+  });</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setFillMode"><span class="type-signature"></span>setFillMode<span class="signature">(fillMode)</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line518">line 518</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Set fill mode for the item when the animation is not playing (before it starts, after it ends, or both)
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>fillMode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">FillModeType</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">fillMode</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setId"><span class="type-signature"></span>setId<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line491">line 491</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Specifies the unique indicator of the animator
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">String or number of id to be set in the animator</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setIterationCount"><span class="type-signature"></span>setIterationCount<span class="signature">(iterationCount)</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line529">line 529</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Set the number of times an animation should be played.
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>iterationCount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">IterationCountType</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">iterationCount</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setOptions"><span class="type-signature"></span>setOptions<span class="signature">(options<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line166">line 166</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://www.w3schools.com/css/css3_animations.asp">CSS3 Animation</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    set animator's options.
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Partial&lt;AnimatorOptions></span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>{}</code>
+                
+                </td>
+            
+
+            <td class="description last">animator's options</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>animator.({
+      delay: 2,
+      diretion: "alternate",
+      duration: 2,
+      fillMode: "forwards",
+      iterationCount: 3,
+      easing: Scene.eaasing.EASE,
+  });</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setPlaySpeed"><span class="type-signature"></span>setPlaySpeed<span class="signature">(playSpeed)</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line562">line 562</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Set the animator's play speed
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>playSpeed</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">playSpeed</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setPlayState"><span class="type-signature"></span>setPlayState<span class="signature">(playState)</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line551">line 551</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Set whether the animation is running or paused.
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>playState</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">PlayStateType</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">playState</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setTime"><span class="type-signature"></span>setTime<span class="signature">(time, isTick<span class="signature-attributes">opt</span>, isParent<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Animator.html">Animator</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line320">line 320</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    set currentTime
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>time</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">currentTime</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isTick</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isParent</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>animator.setTime("from"); // 0
+  animator.setTime("to"); // 100%
+  animator.setTime("50%");
+  animator.setTime(10);
+  animator.getTime() // 10</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An instance itself.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Animator.html">Animator</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+    
+
+    
+
+    
+        <h3 class="subsection-title" id="events">Events</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="event:ended">ended</h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line301">line 301</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    This event is fired when animator is ended.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="event:iteration">iteration</h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line415">line 415</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    The event is fired when an iteration of an animation ends.
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The object of data to be sent to an event.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>currentTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The total time that the animator is running.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>iterationCount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The iteration count that the animator is running.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="event:paused">paused</h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line276">line 276</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    This event is fired when animator is paused.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="event:play">play</h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line235">line 235</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    This event is fired when play animator.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="event:timeupdate">timeupdate</h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line350">line 350</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    This event is fired when the animator updates the time.
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>param</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The object of data to be sent to an event.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>currentTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The total time that the animator is running.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>time</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The iteration time during duration that the animator is running.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>iterationCount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The iteration count that the animator is running.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+</article>
+
+</section>
+
+
+
+
+
+<style>
+
+
+nav li[file="animator"]:after {
+    display: none;
+}
+nav li[file="animator"] h4, nav li[file="animator"] ul {
+    display: block;
+}
+</style>
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/daybrush/jsdoc">JSDoc 0.3.7</a> on Thu May 23 2019 02:49:07 GMT+0900 (GMT+09:00) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/utils.min.js"></script>
+<script src="scripts/search.js"></script>
+</body>
+</html>

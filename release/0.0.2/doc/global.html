@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Home - Documentation</title>
+    <title>Global - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -14,7 +14,7 @@
     <link type="text/css" rel="stylesheet" href="styles/daybrush.css">
     <link type="text/css" rel="stylesheet" href="styles/custom.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="description" content="Home - Documentation"/>
+    <meta name="description" content="Global - Documentation"/>
 
 </head>
 <body>
@@ -32,98 +32,362 @@
 
 <div id="main">
     
+    <h1 class="page-title">Global</h1>
+    
 
     
 
 
 
+
+<section>
+
+<header>
+    
+        <h2>
+        
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+<dl class="details">
+
     
 
-
-
-
-
-
-
-
+    
 
     
 
+    
 
-    <section class="readme">
-        <article><h1>@scenejs/iframe <a href="https://badge.fury.io/js/%40scenejs%2Fiframe"><img src="https://badge.fury.io/js/%40scenejs%2Fiframe.svg" alt="npm version"></a></h1>
-<p>A library that control the animation of iframe with <a href="https://github.com/daybrush/scenejs"><strong>scenejs</strong></a></p>
-<ul>
-<li><a href="https://daybrush.com/scenejs-iframe/release/latest/doc">API Documentation</a></li>
-</ul>
-<h2>Installation</h2>
-<h3>npm</h3>
-<pre class="prettyprint source lang-bash"><code>$ npm install @scenejs/iframe
-</code></pre>
-<h3>scripts</h3>
-<ul>
-<li>dependency in <a href="https://github.com/daybrush/scenejs"><strong>scenejs</strong></a></li>
-</ul>
-<pre class="prettyprint source lang-html"><code>&lt;script src=&quot;//daybrush.com/@scenejs/iframe/release/latest/dist/iframe.min.js&quot;>&lt;/script>
-</code></pre>
-<h3>Getting Started</h3>
-<ul>
-<li><a href="https://daybrush.com/scenejs-iframe/release/latest/examples/index.html">index.html</a> (parent)</li>
-</ul>
-<pre class="prettyprint source lang-html"><code>&lt;iframe id=&quot;iframe1&quot; src=&quot;./motion.html&quot;>&lt;/iframe>
-&lt;iframe id=&quot;iframe2&quot; src=&quot;./motion.html&quot;>&lt;/iframe>
-&lt;iframe id=&quot;iframe3&quot; src=&quot;./motion.html&quot;>&lt;/iframe>
-&lt;iframe id=&quot;iframe4&quot; src=&quot;./motion.html&quot;>&lt;/iframe>
-</code></pre>
-<pre class="prettyprint source lang-js"><code>import Scene from &quot;scenejs&quot;;
-import IframeItem from &quot;@scenejs/iframe&quot;;
+    
 
-new Scene({
-    &quot;#iframe1&quot;: new IframeItem({}, { duration: 3.4, delay: 0 }),
-    &quot;#iframe2&quot;: new IframeItem({}, { duration: 3.4, delay: 0.15 }),
-    &quot;#iframe3&quot;: new IframeItem({}, { duration: 3.4, delay: 0.3 }),
-    &quot;#iframe4&quot;: new IframeItem({}, { duration: 3.4, delay: 0.45 }),
-}, {
-    selector: true,
-    iterationCount: &quot;infinite&quot;,
-}).play();
-</code></pre>
-<ul>
-<li><a href="https://daybrush.com/scenejs-iframe/release/latest/examples/motion.html">motion.html</a></li>
-</ul>
-<pre class="prettyprint source lang-js"><code>import { register } from &quot;@scenejs/iframe&quot;;
-var scene = new Scene({
-    ....
-});
+    
 
-// IframeItem.register(scene);
-register(scene);
-</code></pre>
-<pre class="prettyprint source"><code>MIT License
+    
 
-Copyright (c) 2019 Daybrush
+    
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the &quot;Software&quot;), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+    
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+    
 
-THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-</code></pre></article>
-    </section>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
 
 
+
+
+        
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+<h4 class="name" id="AnimatorState">AnimatorState</h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="node_modules_scenejs_src_Animator.ts.html">node_modules/scenejs/src/Animator.ts</a>, <a href="node_modules_scenejs_src_Animator.ts.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>duration</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The duration property defines how long an animation should take to complete one cycle.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fillMode</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">"none"</span>
+|
+
+<span class="param-type">"forwards"</span>
+|
+
+<span class="param-type">"backwards"</span>
+|
+
+<span class="param-type">"both"</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The fillMode property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both).</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>iterationCount</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">"infinite"</span>
+|
+
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The iterationCount property specifies the number of times an animation should be played.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>easing</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The easing(timing-function) specifies the speed curve of an animation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>delay</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The delay property specifies a delay for the start of an animation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code>?</td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">"normal"</span>
+|
+
+<span class="param-type">"reverse"</span>
+|
+
+<span class="param-type">"alternate"</span>
+|
+
+<span class="param-type">"alternate-reverse"</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The direction property defines whether an animation should be played forwards, backwards or in alternate cycles.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    The Animator options. Properties used in css animation.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+            
+    
+
+    
+</article>
+
+</section>
 
 
 
@@ -131,18 +395,11 @@ SOFTWARE.
 
 <style>
 
-nav>.search+ul li:first-child:after {
+
+nav li[file="global"]:after {
     display: none;
 }
-nav>.search+ul li:first-child h4, nav>.search+ul li:first-child ul {
-    display: block;
-}
-
-
-nav li[file="home"]:after {
-    display: none;
-}
-nav li[file="home"] h4, nav li[file="home"] ul {
+nav li[file="global"] h4, nav li[file="global"] ul {
     display: block;
 }
 </style>

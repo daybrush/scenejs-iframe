@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Home - Documentation</title>
+    <title>src/utils.ts - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -14,7 +14,7 @@
     <link type="text/css" rel="stylesheet" href="styles/daybrush.css">
     <link type="text/css" rel="stylesheet" href="styles/custom.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="description" content="Home - Documentation"/>
+    <meta name="description" content="src/utils.ts - Documentation"/>
 
 </head>
 <body>
@@ -32,98 +32,87 @@
 
 <div id="main">
     
+    <h1 class="page-title">src/utils.ts</h1>
+    
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { Animator } from "scenejs";
+import { addEvent, isString } from "@daybrush/utils";
+addEvent(window, "message", e => {
+    const result = parseMessage(e.data);
 
+    if (!result) {
+        return;
+    }
 
+    if (result[0] === "ready") {
+        sendMessage(e.source, "end");
+    }
+});
 
+export function sendMessage(target: any, message: string) {
+    target.postMessage(`scene:${message}`, "*");
+}
+export function parseMessage(message: string) {
+    if (!isString(message)) {
+        return;
+    }
+    return /(?&lt;=^scene\:)([^:]+)(?:\:([^:]+))*/g.exec(message);
+}
 
-
-
-
-
-
-    
-
-
-    <section class="readme">
-        <article><h1>@scenejs/iframe <a href="https://badge.fury.io/js/%40scenejs%2Fiframe"><img src="https://badge.fury.io/js/%40scenejs%2Fiframe.svg" alt="npm version"></a></h1>
-<p>A library that control the animation of iframe with <a href="https://github.com/daybrush/scenejs"><strong>scenejs</strong></a></p>
-<ul>
-<li><a href="https://daybrush.com/scenejs-iframe/release/latest/doc">API Documentation</a></li>
-</ul>
-<h2>Installation</h2>
-<h3>npm</h3>
-<pre class="prettyprint source lang-bash"><code>$ npm install @scenejs/iframe
-</code></pre>
-<h3>scripts</h3>
-<ul>
-<li>dependency in <a href="https://github.com/daybrush/scenejs"><strong>scenejs</strong></a></li>
-</ul>
-<pre class="prettyprint source lang-html"><code>&lt;script src=&quot;//daybrush.com/@scenejs/iframe/release/latest/dist/iframe.min.js&quot;>&lt;/script>
-</code></pre>
-<h3>Getting Started</h3>
-<ul>
-<li><a href="https://daybrush.com/scenejs-iframe/release/latest/examples/index.html">index.html</a> (parent)</li>
-</ul>
-<pre class="prettyprint source lang-html"><code>&lt;iframe id=&quot;iframe1&quot; src=&quot;./motion.html&quot;>&lt;/iframe>
-&lt;iframe id=&quot;iframe2&quot; src=&quot;./motion.html&quot;>&lt;/iframe>
-&lt;iframe id=&quot;iframe3&quot; src=&quot;./motion.html&quot;>&lt;/iframe>
-&lt;iframe id=&quot;iframe4&quot; src=&quot;./motion.html&quot;>&lt;/iframe>
-</code></pre>
-<pre class="prettyprint source lang-js"><code>import Scene from &quot;scenejs&quot;;
-import IframeItem from &quot;@scenejs/iframe&quot;;
-
-new Scene({
-    &quot;#iframe1&quot;: new IframeItem({}, { duration: 3.4, delay: 0 }),
-    &quot;#iframe2&quot;: new IframeItem({}, { duration: 3.4, delay: 0.15 }),
-    &quot;#iframe3&quot;: new IframeItem({}, { duration: 3.4, delay: 0.3 }),
-    &quot;#iframe4&quot;: new IframeItem({}, { duration: 3.4, delay: 0.45 }),
-}, {
-    selector: true,
-    iterationCount: &quot;infinite&quot;,
-}).play();
-</code></pre>
-<ul>
-<li><a href="https://daybrush.com/scenejs-iframe/release/latest/examples/motion.html">motion.html</a></li>
-</ul>
-<pre class="prettyprint source lang-js"><code>import { register } from &quot;@scenejs/iframe&quot;;
+/**
+ * Register an animator to be controlled by the parent.
+ * @memberof IframeItem
+ * @param - The target to register
+ * @example
+import Scene from "scenejs";
+import { register } from "@scenejs/iframe";
 var scene = new Scene({
     ....
 });
-
 // IframeItem.register(scene);
 register(scene);
+ */
+export function register(item: Animator): void {
+    if (window.parent &amp;&amp; window.parent.postMessage) {
+        sendMessage(window.parent, "ready");
+    }
+    addEvent(window, "message", e => {
+        const data = e.data;
+        const result = parseMessage(data);
+
+        if (!result) {
+            return;
+        }
+        const type = result[1];
+        const value = result[2];
+
+        switch (type) {
+            case "start":
+                item.start(0);
+                break;
+            case "pause":
+                item.pause();
+                break;
+            case "end":
+                item.finish();
+                break;
+            case "time":
+            case "animate":
+                item.setTime(parseFloat(value), type === "animate", true);
+                break;
+        }
+    });
+}
 </code></pre>
-<pre class="prettyprint source"><code>MIT License
-
-Copyright (c) 2019 Daybrush
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the &quot;Software&quot;), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-</code></pre></article>
+        </article>
     </section>
-
-
 
 
 
@@ -131,18 +120,11 @@ SOFTWARE.
 
 <style>
 
-nav>.search+ul li:first-child:after {
+
+nav li[file="src/utils"]:after {
     display: none;
 }
-nav>.search+ul li:first-child h4, nav>.search+ul li:first-child ul {
-    display: block;
-}
-
-
-nav li[file="home"]:after {
-    display: none;
-}
-nav li[file="home"] h4, nav li[file="home"] ul {
+nav li[file="src/utils"] h4, nav li[file="src/utils"] ul {
     display: block;
 }
 </style>
