@@ -7,7 +7,7 @@
 		"destination": "./doc/"
     },
     "source": {
-		"include": ["./src", "README.md"],
+		"include": ["README.md", "./node_modules/scenejs/src/SceneItem.ts", "./node_modules/scenejs/src/Animator.ts", "./src"],
         "includePattern": "(.+\\.js(doc|x)?|.+\\.ts(doc|x)?)$",
         "excludePattern": "(^|\\/|\\\\)_"
     },

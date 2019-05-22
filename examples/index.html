@@ -11,6 +11,7 @@
         left: 50%;
         width: 350px;
         height: 350px;
+        border: 0;
     }
     #iframe1 {
         transform: translate(-50%, -50%) translate(-100px, -100px);
@@ -28,11 +29,9 @@
 
 <script src="https://daybrush.com/scenejs/release/latest/dist/scene.js"></script>
 <script src="https://daybrush.com/scenejs-timeline/release/latest/dist/timeline.pkgd.js"></script>
-<script src="../../scenejs-timeline/dist/timeline.pkgd.js"></script>
 <script src="../dist/iframe.js"></script>
 
 <script>
-
 var scene = new Scene({
     "#iframe1": new IframeItem({}, { duration: 3.4, delay: 0 }),
     "#iframe2": new IframeItem({}, { duration: 3.4, delay: 0.15 }),

@@ -1,7 +1,27 @@
-import { SceneItem, EasingType, AnimateElement } from "scenejs";
-import { IArrayFormat } from "@daybrush/utils";
+import { SceneItem, EasingType } from "scenejs";
+import { sendMessage } from "./utils";
 
-export default class IframeItem extends SceneItem {
+/**
+ * Control the animation of iframe
+ * @sort 1
+ * @param {any} properties - properties
+ * @param {SceneItemOptions} options - options
+ * @example
+// index.html (parent)
+import Scene from "scenejs";
+import IframeItem from "@scenejs/iframe";
+
+var scene = new Scene({
+    "#iframe1": new IframeItem({}, { duration: 3.4, delay: 0 }),
+    "#iframe2": new IframeItem({}, { duration: 3.4, delay: 0.15 }),
+    "#iframe3": new IframeItem({}, { duration: 3.4, delay: 0.3 }),
+    "#iframe4": new IframeItem({}, { duration: 3.4, delay: 0.45 }),
+}, {
+    selector: true,
+    iterationCount: "infinite",
+});
+ */
+class IframeItem extends SceneItem {
     public setTime(time: number | string, isTick?: boolean, isParent?: boolean, parentEasing?: EasingType): this {
         super.setTime(time, isTick, isParent, parentEasing);
         const iterationTime = this.getIterationTime();
@@ -32,8 +52,9 @@ export default class IframeItem extends SceneItem {
             if (!el.contentWindow) {
                 return;
             }
-            el.contentWindow.postMessage(`scene:${message}`, "*");
+            sendMessage(el.contentWindow, message);
         });
 
     }
 }
+export default IframeItem;

@@ -1,14 +1,47 @@
 import { Animator } from "scenejs";
 import { addEvent, isString } from "@daybrush/utils";
+addEvent(window, "message", e => {
+    const result = parseMessage(e.data);
 
-export function register(item: Animator) {
+    if (!result) {
+        return;
+    }
+
+    if (result[0] === "ready") {
+        sendMessage(e.source, "end");
+    }
+});
+
+export function sendMessage(target: any, message: string) {
+    target.postMessage(`scene:${message}`, "*");
+}
+export function parseMessage(message: string) {
+    if (!isString(message)) {
+        return;
+    }
+    return /(?<=^scene\:)([^:]+)(?:\:([^:]+))*/g.exec(message);
+}
+
+/**
+ * Register an animator to be controlled by the parent.
+ * @memberof IframeItem
+ * @param - The target to register
+ * @example
+import Scene from "scenejs";
+import { register } from "@scenejs/iframe";
+var scene = new Scene({
+    ....
+});
+// IframeItem.register(scene);
+register(scene);
+ */
+export function register(item: Animator): void {
+    if (window.parent && window.parent.postMessage) {
+        sendMessage(window.parent, "ready");
+    }
     addEvent(window, "message", e => {
         const data = e.data;
-
-        if (!isString(data)) {
-            return;
-        }
-        const result = /(?<=^scene\:)([^:]+)(?:\:([^:]+))?/g.exec(data);
+        const result = parseMessage(data);
 
         if (!result) {
             return;
@@ -24,7 +57,7 @@ export function register(item: Animator) {
                 item.pause();
                 break;
             case "end":
-                item.end();
+                item.finish();
                 break;
             case "time":
             case "animate":

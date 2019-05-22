@@ -1,5 +1,8 @@
 # @scenejs/iframe [![npm version](https://badge.fury.io/js/%40scenejs%2Fiframe.svg)](https://badge.fury.io/js/%40scenejs%2Fiframe)
 
+A library that control the animation of iframe with [**scenejs**](https://github.com/daybrush/scenejs)
+
+* [API Documentation](https://daybrush.com/scenejs-iframe/release/latest/doc)
 
 ## Installation
 ### npm
@@ -8,19 +11,45 @@ $ npm install @scenejs/iframe
 ```
 
 ### scripts
-* Unpackaged
+* dependency in [**scenejs**](https://github.com/daybrush/scenejs)
 
 ```html
 <script src="//daybrush.com/@scenejs/iframe/release/latest/dist/iframe.min.js"></script>
 ```
 
-* Packaged
+### Getting Started
+* [index.html](https://daybrush.com/scenejs-iframe/release/latest/examples/index.html) (parent)
 ```html
-<script src="//daybrush.com/@scenejs/iframe/release/latest/dist/iframe.pkgd.min.js"></script>
+<iframe id="iframe1" src="./motion.html"></iframe>
+<iframe id="iframe2" src="./motion.html"></iframe>
+<iframe id="iframe3" src="./motion.html"></iframe>
+<iframe id="iframe4" src="./motion.html"></iframe>
+```
+```js
+import Scene from "scenejs";
+import IframeItem from "@scenejs/iframe";
+
+new Scene({
+    "#iframe1": new IframeItem({}, { duration: 3.4, delay: 0 }),
+    "#iframe2": new IframeItem({}, { duration: 3.4, delay: 0.15 }),
+    "#iframe3": new IframeItem({}, { duration: 3.4, delay: 0.3 }),
+    "#iframe4": new IframeItem({}, { duration: 3.4, delay: 0.45 }),
+}, {
+    selector: true,
+    iterationCount: "infinite",
+}).play();
+```
+* [motion.html](https://daybrush.com/scenejs-iframe/release/latest/examples/motion.html)
+```js
+import { register } from "@scenejs/iframe";
+var scene = new Scene({
+    ....
+});
+
+// IframeItem.register(scene);
+register(scene);
 ```
 
-## API Documents
-* [API documentation](https://daybrush.com/@scenejs/iframe/release/latest/doc/)
 
 ```
 MIT License

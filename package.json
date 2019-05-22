@@ -1,7 +1,7 @@
 {
   "name": "@scenejs/iframe",
-  "version": "0.0.1",
-  "description": "new project",
+  "version": "0.0.2",
+  "description": "A library that control the animation of iframe with scenejs",
   "main": "./dist/iframe.cjs.js",
   "module": "./dist/iframe.esm.js",
   "sideEffects": false,
@@ -12,9 +12,21 @@
     "declaration": "rm -rf declaration && tsc -p tsconfig.declaration.json",
     "doc": "rm -rf ./doc && jsdoc -c jsdoc.json",
     "prerelease": "npm run build && prerelease --dirs=dist,doc",
-    "release": "npm run build && npm run doc && release --dirs=dist,doc",
-    "release:init": "npm run build && npm run doc && release -i --dirs=dist,doc"
+    "release": "npm run build && npm run doc && release --dirs=dist,doc,examples",
+    "release:init": "npm run build && npm run doc && release -i --dirs=dist,doc,examples"
   },
+  "keywords": [
+      "scenejs",
+      "scene",
+      "css",
+      "javascript",
+      "iframe",
+      "message",
+      "control",
+      "timeline",
+      "requestAnimationFrame",
+      "motion"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daybrush/scenejs-iframe.git"
