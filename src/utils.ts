@@ -8,7 +8,7 @@ addEvent(window, "message", e => {
         return;
     }
 
-    if (result[0] === "ready") {
+    if (result[1] === "ready") {
         sendMessage(e.source, "end");
     }
 });
@@ -20,7 +20,7 @@ export function parseMessage(message: string) {
     if (!isString(message)) {
         return;
     }
-    return /(?<=^scene\:)([^:]+)(?:\:([^:]+))*/g.exec(message);
+    return /(?:^scene\:)([^:]+)(?:\:([^:]+))*/g.exec(message);
 }
 
 /**
