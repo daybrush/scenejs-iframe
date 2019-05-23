@@ -113,7 +113,7 @@ version: 0.0.4
         return;
       }
 
-      if (result[0] === "ready") {
+      if (result[1] === "ready") {
         sendMessage(e.source, "end");
       }
     });

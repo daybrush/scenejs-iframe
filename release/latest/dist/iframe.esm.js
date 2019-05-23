@@ -54,7 +54,7 @@ addEvent(window, "message", function (e) {
     return;
   }
 
-  if (result[0] === "ready") {
+  if (result[1] === "ready") {
     sendMessage(e.source, "end");
   }
 });
