@@ -1,0 +1,47 @@
+
+<iframe id="iframe1" src="./motion.html"></iframe>
+<iframe id="iframe2" src="./motion.html"></iframe>
+<iframe id="iframe3" src="./motion.html"></iframe>
+<iframe id="iframe4" src="./motion.html"></iframe>
+
+<style>
+    iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 350px;
+        height: 350px;
+        border: 0;
+    }
+    #iframe1 {
+        transform: translate(-50%, -50%) translate(-100px, -100px);
+    }
+    #iframe2 {
+        transform: translate(-50%, -50%) translate(100px, -100px);
+    }
+    #iframe3 {
+        transform: translate(-50%, -50%) translate(-100px, 100px);
+    }
+    #iframe4 {
+        transform: translate(-50%, -50%) translate(100px, 100px);
+    }
+</style>
+
+<script src="https://daybrush.com/scenejs/release/latest/dist/scene.js"></script>
+<script src="https://daybrush.com/scenejs-timeline/release/latest/dist/timeline.pkgd.js"></script>
+<script src="../dist/iframe.js"></script>
+
+<script>
+var scene = new Scene({
+    "#iframe1": new IframeItem({}, { duration: 3.4, delay: 0 }),
+    "#iframe2": new IframeItem({}, { duration: 3.4, delay: 0.15 }),
+    "#iframe3": new IframeItem({}, { duration: 3.4, delay: 0.3 }),
+    "#iframe4": new IframeItem({}, { duration: 3.4, delay: 0.45 }),
+}, {
+    selector: true,
+    iterationCount: "infinite",
+});
+
+
+var timeline = new Timeline(scene, document.body);
+</script>
