@@ -1,6 +1,6 @@
 {
   "name": "@scenejs/iframe",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "A library that control the animation of iframe with scenejs",
   "main": "./dist/iframe.cjs.js",
   "module": "./dist/iframe.esm.js",
@@ -16,16 +16,16 @@
     "release:init": "npm run build && npm run doc && release -i --dirs=dist,doc,examples"
   },
   "keywords": [
-      "scenejs",
-      "scene",
-      "css",
-      "javascript",
-      "iframe",
-      "message",
-      "control",
-      "timeline",
-      "requestAnimationFrame",
-      "motion"
+    "scenejs",
+    "scene",
+    "css",
+    "javascript",
+    "iframe",
+    "message",
+    "control",
+    "timeline",
+    "requestAnimationFrame",
+    "motion"
   ],
   "repository": {
     "type": "git",
@@ -39,7 +39,7 @@
   "homepage": "https://github.com/daybrush/scenejs-iframe#readme",
   "dependencies": {
     "@daybrush/utils": "^0.9.0",
-    "scenejs": "^1.0.0-rc10"
+    "scenejs": "^1.0.0"
   },
   "devDependencies": {
     "@daybrush/builder": "0.0.5",
